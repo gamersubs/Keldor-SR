@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.Options {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.option {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: flex 0.5s ease;
+}
+
+.Zack {
+    background-image: url('../img/Zack.png');
+    background-color: #ccc;
+}
+
+.Shop-B {
+    background-image: url('../img/shop-b.png');
+}
+
+.option:hover {
+    flex: 2;
+}
+
+.option:not(:hover) {
+    flex: 0.5;
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.spreadsheet {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spreadsheet th,
+.spreadsheet td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #CCC;
+    color: white;
+}
+
+.spreadsheet th {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.spreadsheet tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.spreadsheet tr:nth-child(odd) {
+    background-color: rgba(127, 127, 127, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.ZackSite {
+    background-image: url(../img/Zack.png);
+    background-position: top;
+    background-size: cover;
+}
+
+.SBSite {
+    background-image: url(../img/shop-b.png);
+    background-position: center;
+    background-size: cover;
+}
